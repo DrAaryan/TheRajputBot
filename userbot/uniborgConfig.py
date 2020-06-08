@@ -22,7 +22,7 @@ if ENV:
         # This is required for the hash to torrent file functionality to work.
         HASH_TO_TORRENT_API = os.environ.get("HASH_TO_TORRENT_API", "https://example.com/torrent/{}");
         # This is required for the @telegraph functionality.
-        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "X-Tra-Telegram")
+        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "TheRajputBot")
         # Get a Free API Key from OCR.Space
         OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
         # Send .get_id in any group with all your administration bots (added)
@@ -34,6 +34,7 @@ if ENV:
         TG_BOT_TOKEN_BF_HER = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
         TG_BOT_USER_NAME_BF_HER = os.environ.get("TG_BOT_USER_NAME_BF_HER", None)
         #
+        NO_SONGS = bool(os.environ.get("NO_SONGS", False))
         #
         # DO NOT EDIT BELOW THIS LINE IF YOU DO NOT KNOW WHAT YOU ARE DOING
         # TG API limit. A message can have maximum 4096 characters!
@@ -60,7 +61,6 @@ if ENV:
         GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
         NO_P_M_SPAM = bool(os.environ.get("NO_P_M_SPAM", False))
         # define "spam" in PMs
-        NO_SONGS = bool(os.environ.get("NO_SONGS", False))
         MAX_FLOOD_IN_P_M_s = int(os.environ.get("MAX_FLOOD_IN_P_M_s", 3))
         # set to True if you want to log PMs to your PM_LOGGR_BOT_API_ID
         NC_LOG_P_M_S = bool(os.environ.get("NC_LOG_P_M_S", False))
@@ -80,7 +80,7 @@ if ENV:
         # specify list of users allowed to use bot
         # WARNING: be careful who you grant access to your bot.
         # malicious users could do ".exec rm -rf /*"
-        SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
+        SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "1025131461").split())
         # VeryStream only supports video formats
         VERY_STREAM_LOGIN = os.environ.get("VERY_STREAM_LOGIN", None)
         VERY_STREAM_KEY = os.environ.get("VERY_STREAM_KEY", None)
@@ -106,7 +106,6 @@ if ENV:
         MONGO_URI = os.environ.get("MONGO_URI", None)
         #Lydia API
         LYDIA_API = os.environ.get("LYDIA_API",None)
-        #PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
 else:
     class Config(object):
         DB_URI = None
