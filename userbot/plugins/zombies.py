@@ -5,7 +5,7 @@
 """Cmd= `.zombie`
 Usage: Searches for deleted accounts in a groups and channels.
 Use .zombies clean to remove deleted accounts from the groups and channels.
-\nPorted by ©[NIKITA](t.me/kirito6969) and ©[EYEPATCH](t.me/NeoMatrix90)"""
+\nPorted by ©[TheRajput](t.me/TheRajput) and ©[TheRajput](t.me/TheRajput)"""
 
 from telethon import events
 from userbot.utils import admin_cmd
@@ -128,4 +128,3 @@ async def rm_deletedacc(show):
             Config.G_BAN_LOGGER_GROUP, "#CLEANUP\n"
             f"Cleaned **{del_u}** deleted account(s) !!\
             \nCHAT: {show.chat.title}(`{show.chat_id}`)")
-
