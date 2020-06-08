@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/TheRajputBot/TheRajputBot/",
+  "repository": "https://github.com/DrAaryan/TheRajputBot/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -55,7 +55,7 @@
       "required": false
     },
     "GIT_REPO_NAME": {
-      "description": "Your repo name Example: TheRajputBot/TheRajputBot, but GITHUB_ACCESS_TOKEN must be setup first.",
+      "description": "Your repo name Example: DrAaryan/TheRajputBot, but GITHUB_ACCESS_TOKEN must be setup first.",
       "value": "",
       "required": false
     },
