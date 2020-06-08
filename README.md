@@ -1,6 +1,6 @@
 # FORK AT YOUR OWN RISK
 <h1 align="center">TheRajputBoT</h1>
-<p align="center"><a href="https://img.shields.io/github/repo-size/TheRajpuBot/TheRajputBot.svg?label=Repo%20size&style=flat-square"> <img src="https://img.shields.io/github/repo-size/TheRajputBot/TheRajputBot.svg?label=Repo%20size&style=flat-square" alt="Repo Size" /></a> <a align="center"><a href="https://api.codacy.com/project/badge/Grade/441b48966e9f4b58a643d7c4cee8ba66?label=Repo%20size&style=flat-square"> <img src="https://api.codacy.com/project/badge/Grade/441b48966e9f4b58a643d7c4cee8ba66?label=Repo%20size&style=flat-square" alt="Repo Size" /></a></p>
+<p align="center"><a href="https://img.shields.io/github/repo-size/DrAaryan/TheRajputBot.svg?label=Repo%20size&style=flat-square"> <img src="https://img.shields.io/github/repo-size/DrAaryan/TheRajputBot.svg?label=Repo%20size&style=flat-square" alt="Repo Size" /></a> <a align="center"><a href="https://api.codacy.com/project/badge/Grade/441b48966e9f4b58a643d7c4cee8ba66?label=Repo%20size&style=flat-square"> <img src="https://api.codacy.com/project/badge/Grade/441b48966e9f4b58a643d7c4cee8ba66?label=Repo%20size&style=flat-square" alt="Repo Size" /></a></p>
 <p align="center"><a href="#how-to-host">How To Host</a> | <a href="#updates-and-support">Updates and Support</a> </p>
 <h3 align="center">This is a Userbot made for Telegram</h3>
 <h2 align="center">How To Host</h2>
