@@ -5,7 +5,7 @@
 <h3 align="center">This is a Userbot made for Telegram</h3>
 <h2 align="center">How To Host</h2>
 <h2 align="center">The easiest way to deploy mah bot! is click on the image below</h2>
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/TheRajputBot/TheRajputBot"> <img src="https://telegra.ph/file/6095a85e34a29d327302e.jpg" alt="Deploy to Heroku" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/DrAaryan/TheRajputBot"> <img src="https://telegra.ph/file/6095a85e34a29d327302e.jpg" alt="Deploy to Heroku" /></a></p>
 <h2 align="center">Updates and Support</h2>
 <p align="center">Join our <a href="https://t.me/TheRajputBot">Telegram Channel</a> for update notifications!</p>
 <p align="center">Also join me in my inbox <a href="https://t.me/TheRajput">Telegram </a> for help and support!</p>
