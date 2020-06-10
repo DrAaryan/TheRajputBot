@@ -8,12 +8,12 @@ Available Commands:
 from telethon import events
 
 import asyncio
-from uniborg.util import admin_cmd
-from telethon.tl.functions.users import GetFullUserRequest
 
 
 
-@borg.on(admin_cmd(pattern=r"hack"))
+
+
+@borg.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 
 async def _(event):
 
@@ -21,25 +21,17 @@ async def _(event):
 
         return
 
-    animation_interval = 3
+    animation_interval = 2
 
     animation_ttl = range(0, 11)
 
-    #input_str = event.pattern_match.group(1)
+    input_str = event.pattern_match.group(1)
 
-    #if input_str == "hack":
+    if input_str == "hack":
 
-    if event.reply_to_msg_id:
-        reply_message = await event.get_reply_message()
-        replied_user = await event.client(GetFullUserRequest(reply_message.from_id))
-        firstname = replied_user.user.first_name
-        usname = replied_user.user.username
-        idd = reply_message.from_id
-        if idd==1025131461:
-            await event.edit("This is My Master\nI can't hack my master's Account")
-        else:
-            await event.edit("Hacking..")
-            animation_chars = [
+        await event.edit(input_str)
+
+        animation_chars = [
         
             "`Connecting To Hacked Private Server...`",
             "`Target Selected.`",
@@ -51,13 +43,11 @@ async def _(event):
             "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Hacking... 84%\n█████████████████████▒▒▒▒ `",
             "`Hacking... 100%\n█████████HACKED███████████ `",
-            "`Targeted Account Hacked...\n\nPay 69$ To` @TheRajput `To Remove this hack..`"
-            ]
+            "`Targeted Account Hacked...\n\nPay 69$ To` @TheRajput `Or send nudes of female Homo Sapiens To Remove This Hack`"
+        ]
 
-            for i in animation_ttl:
+        for i in animation_ttl:
 
-                await asyncio.sleep(animation_interval)
+            await asyncio.sleep(animation_interval)
 
-                await event.edit(animation_chars[i % 11])
-    else:
-        await event.edit("No User is Defined\n Can't hack account")
+            await event.edit(animation_chars[i % 11])
